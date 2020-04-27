@@ -4,6 +4,8 @@ var session = require("express-session");
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
 var mysql = require("mysql");
+// Require Compression
+var compression = require("compression");
 
 // Set Handlebars.
 var exphbs = require("express-handlebars");
@@ -34,6 +36,9 @@ app.use(
 );
 app.use(passport.initialize());
 app.use(passport.session());
+
+//Compression
+app.use(compression());
 
 // Set Handlebars as the default templating engine.
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
