@@ -1,0 +1,123 @@
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+.hero {
+  background-color:yellowgreen;
+  color: #f4fffd;
+}
+.hero-body {
+  color: #f4fffd;
+}
+h1 {
+  color: #f4fffd;
+  font-size: 50px;
+}
+h2 {
+  color: #f4fffd;
+}
+
+h3 {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.columns{
+  margin-top: 10px;
+  background-color:gray;
+  border-style: ridge;
+  border-color: yellowgreen;
+  border-radius: 5px;
+
+}
+
+.columnsTwo{
+  margin-top: 10px;
+  background-color: gray;
+}
+
+body{
+  background-color: gray;
+}
+.title{
+  color: #f4fffd;
+}
+
+.sectionFont{
+  color:white;
+  background-color: yellowgreen;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 7px;
+  margin: 10px;
+}
+
+.moviePoster{
+  width: 215px;
+  max-height: 300px;
+  /* float: left; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.movieSections{
+  float: left;
+}
+
+.profile-container {
+  display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+    border-style: ridge;
+    border-color: yellowgreen;
+    border-radius: 5px;
+
+}
+
+.movie-container {
+  /* border-style: ridge;
+  border-color: yellowgreen; */
+  width: 250px;
+  display: inline-block;
+
+}
+
+.fa-heart, .fa-bookmark{
+  color: #91a3b9;
+  position: relative;
+  left: 160px;
+  bottom: 295px;
+}
+
+.searchBox {
+  margin-top: 12px;
+
+  width: 500px;
+}
+
+  a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navbar-brand, .navbar-tabs {
+color: black;
+}
+
+.btn {
+  background-color: white
+}
+
+.button {
+  margin-top: 12px;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.col {
+  padding: 30px;
+}

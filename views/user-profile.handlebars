@@ -1,0 +1,121 @@
+  <div class="container">
+
+<div class="columnTwo">
+    <div class="column is-one-half">
+
+        <div class="profile-container">
+
+            <div>
+                <input class="searchBox input is-medium" type="text" placeholder="Search for a Movie">
+                <button class="button is-medium">Search!</button>
+                <br>
+                <div id="movie" class="columns">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <h3 class="sectionFont is-size-3">User Profile</h3>
+
+        <br>
+
+        <div class="profile-container">
+            <h3 class="sectionFont is-size-3">Watchlist</h3>
+
+            <div>
+                {{#each Movies}}
+                {{#if wantToWatch}}
+
+                <div class="movie-container movie-watchlist">
+                    <br>
+                    <img class="moviePoster" src="https://image.tmdb.org/t/p/w500/{{poster}}" alt="poster">
+                    <br>
+                    {{!-- <h3 class="sectionFont is-size-4">{{title}}</h3>
+                    <br> --}}
+                    <button class="addToFavorites button" data-id="{{this.id}}"><i class="fa fa-heartbeat"
+                            aria-hidden="true"></i>
+                    </button>
+                    <button class="delete-movie button" data-id="{{this.id}}"><i class="fa fa-trash"
+                            aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                {{/if}}
+                {{/each}}
+            </div>
+        </div>
+
+        <br>
+
+        <div class="profile-container">
+            <h3 class="sectionFont is-size-3">Favorites</h3>
+
+            <ul>
+                {{#each Movies}}
+                {{#if favorite}}
+
+                <li class="movie-container movie-favorite">
+                    <br>
+                    <img class="moviePoster" src="https://image.tmdb.org/t/p/w500/{{poster}}" alt="poster">
+                    <br>
+                    {{!-- <h3 class="sectionFont is-size-4">{{title}}</h3>
+                    <br> --}}
+                    <button class="addToWatchlist button" data-id="{{this.id}}"><i class="fa fa-eye"
+                            alt="Add to Watchlist" aria-hidden="true"></i>
+                    </button> <button class="delete-movie button" data-id="{{this.id}}"><i class="fa fa-trash"
+                            aria-hidden="true"></i>
+                    </button>
+                </li>
+
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+
+        <br>
+
+        <div class="profile-container">
+            <h3 class="sectionFont is-size-3">Recent Searches</h3>
+
+            <ul>
+                {{#each Movies}}
+                <li class="movie-container">
+                    <img class="moviePoster" src="https://image.tmdb.org/t/p/w500/{{poster}}" alt="poster">
+                    <br>
+
+                    {{!-- <h3 class="sectionFont is-size-4">{{title}}</h3>
+                    <br> --}}
+                    <button class="addToWatchlist button" data-id="{{this.id}}"><i class="fa fa-eye"
+                            alt="Add to Watchlist" aria-hidden="true"></i>
+                    </button>
+
+                    <button class="addToFavorites button" data-id="{{this.id}}"><i class="fa fa-heartbeat"
+                            aria-hidden="true"></i>
+                    </button>
+
+                    <button class="delete-movie button" data-id="{{this.id}}"><i class="fa fa-trash"
+                            aria-hidden="true"></i>
+                    </button>
+                    <br><br>
+
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/logout">
+                Logout
+            </a>
+        </div>
+    </div>
+</nav>
